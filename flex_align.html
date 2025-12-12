@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Alignment</title>
+    <link rel="stylesheet" href="flex_align.css">
+</head>
+<body>
+
+<h1>Flexbox Alignment</h1>
+
+<section>
+    <h2>1. justify-content: space-between</h2>
+    <p>Distributes space along the Main Axis (Horizontal).</p>
+    <div class="container justify-demo">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+</section>
+
+<section>
+    <h2>2. align-items: center</h2>
+    <p>Aligns items along the Cross Axis (Vertical). Notice the container is tall.</p>
+    <div class="container align-items-demo">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+</section>
+
+<section>
+    <h2>3. align-self (Override)</h2>
+    <p>Container is <code>align-items: flex-start</code> (top), but Item 2 overrides it.</p>
+    <div class="container align-self-demo">
+        <div class="item">1</div>
+        <div class="item self-override">2</div>
+        <div class="item">3</div>
+    </div>
+</section>
+
+<section>
+    <h2>4. align-content: space-around</h2>
+    <p>Only works with <code>flex-wrap: wrap</code>. Controls spacing between rows.</p>
+    <div class="container align-content-demo">
+        <div class="item wide">1</div>
+        <div class="item wide">2</div>
+        <div class="item wide">3</div>
+        <div class="item wide">4</div>
+    </div>
+</section>
+
+</body>
+</html>

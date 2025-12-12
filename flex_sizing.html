@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Sizing</title>
+    <link rel="stylesheet" href="flex_sizing.css">
+</head>
+<body>
+
+<h1>Flex Sizing Properties</h1>
+
+<section>
+    <h2>1. Flex Basis</h2>
+    <p>Items have specific starting sizes (50px, 100px, etc).</p>
+    <div class="container">
+        <div class="item basis-1">50px</div>
+        <div class="item basis-2">100px</div>
+        <div class="item basis-1">50px</div>
+        <div class="item basis-3">70px</div>
+    </div>
+</section>
+
+<section>
+    <h2>2. Flex Grow</h2>
+    <p>All items have `basis: 50px`. Item 2 has `grow: 2`, others `grow: 1`.</p>
+    <div class="container">
+        <div class="item grow-1">1</div>
+        <div class="item grow-2">2 (Big)</div>
+        <div class="item grow-1">1</div>
+        <div class="item grow-1">1</div>
+    </div>
+</section>
+
+<section>
+    <h2>3. Flex Shrink</h2>
+    <p>Container is 400px. Content wants 590px total (including margins). <br>
+        Item 3 (`shrink: 3`) and Item 4 (`shrink: 4`) lose the most width.
+    </p>
+    <div class="container shrink-demo">
+        <div class="item shrink-1">Shrink 1 <br><small>(Base 100)</small></div>
+        <div class="item shrink-2">Shrink 2 <br><small>(Base 200)</small></div>
+        <div class="item shrink-3">Shrink 3 <br><small>(Base 100)</small></div>
+        <div class="item shrink-4">Shrink 4 <br><small>(Base 150)</small></div>
+    </div>
+</section>
+
+<section>
+    <h2>4. Flex Shorthand</h2>
+    <p><code>flex: 1 0 100px</code> (Grow, Don't Shrink, Base 100px)</p>
+    <div class="container">
+        <div class="item shorthand">A</div>
+        <div class="item shorthand">B</div>
+        <div class="item shorthand">C</div>
+    </div>
+</section>
+
+</body>
+</html>

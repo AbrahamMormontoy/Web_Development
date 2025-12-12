@@ -1,0 +1,93 @@
+/* General Page Styling */
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h2 { margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+
+/* --- Base Container & Item --- */
+.container {
+    display: flex;
+    width: 400px;        /* Fixed width to demonstrate math clearly */
+    background-color: #ddd;
+    border: 2px solid #333;
+    margin-bottom: 10px;
+}
+
+.item {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    border: 1px solid white;
+    padding: 10px 0; /* Vertical padding only to keep width math clean */
+    margin: 0 5px;   /* Horizontal Margin */
+}
+
+/* --- 1. Flex Basis --- */
+.basis-1 { flex-basis: 50px; }
+.basis-2 { flex-basis: 100px; }
+.basis-3 { flex-basis: 70px; }
+
+
+/* --- 2. Flex Grow --- */
+.grow-1 {
+    flex-basis: 50px;
+    flex-grow: 1;
+}
+.grow-2 {
+    flex-basis: 50px;
+    flex-grow: 2; /* Gets 2 shares of the free space */
+    background-color: #28a745; /* Green */
+}
+
+
+/* --- 3. Flex Shrink (Complex Calculation) --- */
+/* Total Width Needed:
+   (100+10) + (200+10) + (100+10) + (150+10) = 590px
+   Container: 400px.
+   Overflow: 190px needs to be removed.
+*/
+
+.shrink-demo .item {
+    /* Resetting height/padding for cleaner visualization */
+    padding: 20px 0;
+}
+
+.shrink-1 {
+    flex-basis: 100px;
+    flex-shrink: 1;
+}
+
+.shrink-2 {
+    flex-basis: 200px;
+    flex-shrink: 2;
+    background-color: #6f42c1; /* Purple */
+}
+
+.shrink-3 {
+    flex-basis: 100px;
+    flex-shrink: 3;
+}
+
+.shrink-4 {
+    flex-basis: 150px;
+    flex-shrink: 4;
+    background-color: #dc3545; /* Red */
+}
+
+/* --- 4. Flex Shorthand --- */
+.shorthand {
+    /* grow | shrink | basis */
+    flex: 1 0 100px;
+    background-color: #fd7e14; /* Orange */
+}

@@ -1,0 +1,76 @@
+/* General Page Styling */
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h2 { margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+
+/* --- Base Container & Item --- */
+.container {
+    display: flex;
+    background-color: #ddd;
+    border: 2px solid #999;
+    padding: 5px; /* Minimal padding so we can see alignment clearly */
+}
+
+.item {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    font-size: 1.2rem;
+    border: 1px solid white;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+}
+
+/* --- 1. Justify Content --- */
+.justify-demo {
+    /* Main Axis: Pushes items apart */
+    justify-content: space-between;
+}
+
+/* --- 2. Align Items --- */
+.align-items-demo {
+    height: 150px; /* Fixed height is required to see vertical alignment */
+
+    /* Cross Axis: Centers items vertically */
+    align-items: center;
+    justify-content: center;
+}
+
+/* --- 3. Align Self --- */
+.align-self-demo {
+    height: 150px;
+    align-items: flex-start; /* Default for this container is TOP */
+    justify-content: flex-start;
+}
+
+.self-override {
+    background-color: #dc3545; /* Red */
+
+    /* This specific item goes to the BOTTOM */
+    align-self: flex-end;
+}
+
+/* --- 4. Align Content --- */
+.align-content-demo {
+    flex-wrap: wrap; /* REQUIRED for align-content */
+    height: 250px;   /* Must have extra vertical space to distribute */
+
+    /* Distributes the ROWS vertically with space around them */
+    align-content: space-around;
+    justify-content: center;
+}
+
+.wide { width: 40%; } /* Making items wide to force wrapping */

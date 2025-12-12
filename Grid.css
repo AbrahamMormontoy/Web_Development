@@ -1,0 +1,50 @@
+/* General Page Styling */
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+section {
+    margin-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+/* --- Base Grid Styles --- */
+.grid-container {
+    display: grid;
+    /* Create 3 equal columns */
+    grid-template-columns: auto auto auto;
+
+    background-color: #9771D5; /* Purple background to see the gaps clearly */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.item {
+    background-color: #FDFDFD;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 24px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+/* --- 1. Row Gap Only --- */
+.row-gap-demo {
+    /* Adds space vertically between rows */
+    row-gap: 20px;
+}
+
+/* --- 2. Column Gap Only --- */
+.col-gap-demo {
+    /* Adds space horizontally between columns */
+    column-gap: 50px;
+}
+
+/* --- 3. Shorthand (Mixed) --- */
+.shorthand-demo {
+    /* Syntax: gap: <row-gap> <column-gap>; */
+    gap: 10px 40px;
+}
