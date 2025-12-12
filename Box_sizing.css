@@ -1,0 +1,39 @@
+/* General Page Styling */
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Shared styles for both boxes */
+.box {
+    background-color: lightblue;
+    margin-bottom: 40px;
+
+    /* Both boxes get the exact same dimensions */
+    width: 300px;
+    height: 100px;
+    padding: 20px;       /* 20px Left + 20px Right = 40px total */
+    border: 10px solid blue; /* 10px Left + 10px Right = 20px total */
+}
+
+/* --- 1. Content Box --- */
+.content-box-demo {
+    box-sizing: content-box; /* This is the default in CSS */
+
+    /* Math:
+       Width (300) + Padding (40) + Border (20) = 360px Total
+    */
+    background-color: lightcoral; /* Red-ish color to distinguish */
+}
+
+/* --- 2. Border Box --- */
+.border-box-demo {
+    box-sizing: border-box; /* The preferred method */
+
+    /* Math:
+       Total Width is forced to stay 300px.
+       The inner content shrinks to 240px to accommodate padding/border.
+    */
+    background-color: lightgreen; /* Green color to distinguish */
+}

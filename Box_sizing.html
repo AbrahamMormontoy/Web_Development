@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing Comparison</title>
+    <link rel="stylesheet" href="Box_sizing.css">
+</head>
+<body>
+
+<h2>The "Same" Code, Different Results</h2>
+<p>Both boxes below have <code>width: 300px</code>, <code>padding: 20px</code>, and <code>border: 10px</code>.</p>
+
+<hr>
+
+<h3>1. Content Box (Default)</h3>
+<p>The width (300px) applies only to the <em>content</em>. Padding and border make it bigger.</p>
+
+<div class="box content-box-demo">
+    Total Width = 360px
+</div>
+
+<h3>2. Border Box (Modern)</h3>
+<p>The width (300px) applies to the <em>whole box</em>. Content shrinks to fit.</p>
+
+<div class="box border-box-demo">
+    Total Width = 300px
+</div>
+
+</body>
+</html>

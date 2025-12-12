@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model Demo</title>
+</head>
+<body>
+
+<section>
+    <h2>1. Content</h2>
+    <p>The yellow area represents the content. The blue line is the border. Currently, there is <strong>no padding</strong>, so the border hugs the text tightly.</p>
+    <div class="content-demo">I am the content.</div>
+</section>
+
+<section>
+    <h2>2. Padding</h2>
+    <p>Padding adds space <strong>inside</strong> the border (between text and blue line).</p>
+
+    <h4>Uniform Padding (20px)</h4>
+    <div class="padding-simple">I have 20px padding on all sides.</div>
+
+    <br>
+
+    <h4>Mixed Padding</h4>
+    <div class="padding-mixed">Top: 10px, Right: 50px, Bottom: 20px, Left: 5px.</div>
+</section>
+
+<section>
+    <h2>3. Border</h2>
+    <p>The border sits between the padding and the margin.</p>
+    <div class="border-demo">I have a thick 10px blue border.</div>
+</section>
+
+<section>
+    <h2>4. Margin</h2>
+    <p>Margin pushes other elements away. It is the space <strong>outside</strong> the border.</p>
+    <div style="background: #ddd; display: inline-block;">
+        <div class="margin-box">I have 40px margin.</div>
+    </div>
+    <p class="explanation">Notice the grey box (parent) is pushed away from the yellow box by the white space. That white space is the margin.</p>
+</section>
+
+<section>
+    <h2>5. Height & Width Calculation</h2>
+    <p><strong>Theory:</strong> Total Width = Content Width + Padding + Border.</p>
+    <p><strong>Math:</strong> 300px (content) + 40px (padding L+R) + 20px (border L+R) = <strong>360px Total Width</strong>.</p>
+
+    <div class="calc-box">
+        Content: 300x100
+    </div>
+</section>
+
+</body>
+<footer>
+    <link href="Box_model.css" rel="stylesheet">
+</footer>
+</html>

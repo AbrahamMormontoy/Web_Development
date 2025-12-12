@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Basics</title>
+    <link rel="stylesheet" href="Flexbox.css">
+</head>
+<body>
+
+<h1>Flexbox Concepts</h1>
+
+<section>
+    <h2>1. Flex Direction</h2>
+
+    <h3>Row (Default)</h3>
+    <div class="container direction-row">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <h3>Column</h3>
+    <div class="container direction-column">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+</section>
+
+<section>
+    <h2>2. Flex Wrap</h2>
+    <p>Resize your browser window to see the wrapping effect.</p>
+
+    <h3>Wrap Enabled</h3>
+    <div class="container wrap-demo">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+    </div>
+</section>
+
+<section>
+    <h2>3. Flex Flow</h2>
+    <p><code>flex-flow: column-reverse wrap;</code></p>
+    <div class="container flow-demo">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+</section>
+
+<section>
+    <h2>4. Order</h2>
+    <p>HTML Order: 1, 2, 3, 4, 5. <br> Visual Order: Modified by CSS.</p>
+
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item order-first">3 (First)</div>
+        <div class="item">4</div>
+        <div class="item order-last">5 (Last)</div>
+    </div>
+</section>
+
+</body>
+</html>

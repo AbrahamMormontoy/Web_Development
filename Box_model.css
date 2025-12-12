@@ -1,0 +1,74 @@
+/* General Page Styles */
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4; /* Light grey background to make white boxes pop */
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Utility for visualization */
+section {
+    background: white;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+h2 { border-bottom: 1px solid #ccc; padding-bottom: 10px; }
+
+/* --- 1. Content --- */
+.content-demo {
+    border: 1px solid blue;
+    background-color: lightyellow; /* Content area is yellow */
+}
+
+/* --- 2. Padding --- */
+.padding-simple {
+    border: 5px solid blue;
+    background-color: lightyellow;
+    padding: 20px; /* Equal padding all sides */
+}
+
+.padding-mixed {
+    border: 5px solid blue;
+    background-color: lightyellow;
+    /* Top | Right | Bottom | Left */
+    padding: 10px 50px 20px 5px;
+}
+
+/* --- 3. Border --- */
+.border-demo {
+    padding: 20px;
+    background-color: lightyellow;
+    /* Thick border to see the separation */
+    border: 10px solid blue;
+}
+
+/* --- 4. Margin --- */
+/* To visualize margin, we need a container or neighbor elements */
+.margin-box {
+    border: 2px solid blue;
+    background-color: lightyellow;
+    padding: 10px;
+
+    /* The space OUTSIDE the border */
+    margin: 40px;
+}
+
+/* --- 5. Height and Width Calculation --- */
+.calc-box {
+    /* Content Dimensions */
+    width: 300px;
+    height: 100px;
+
+    /* Extras */
+    padding: 20px;       /* Adds 40px to width (20 left + 20 right) */
+    border: 10px solid red; /* Adds 20px to width (10 left + 10 right) */
+    margin: 20px;
+
+    background-color: lightblue;
+}
+
+/* Helper to show text inside the box */
+.explanation { font-size: 0.9em; color: #555; font-style: italic; }

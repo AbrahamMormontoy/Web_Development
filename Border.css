@@ -1,0 +1,65 @@
+
+    /* General styling for layout (not part of the lesson) */
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+section {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee; /* Subtle separator */
+}
+h2 { color: #333; }
+
+/* --- 1. Border Style --- */
+/* Theory: Use border-style to set visual style (dotted, dashed, solid, etc.) */
+.style-demo {
+    border-style: double;
+}
+
+/* --- 2. Border Color --- */
+/* Theory: border-color sets the color. Defaults to text color if omitted. */
+.color-demo {
+    border-style: solid; /* enables a border */
+    border-color: brown; /* sets border color */
+
+    /* Visual aid: giving it some padding */
+    padding: 10px;
+}
+
+/* --- 3. Border Width --- */
+/* Theory: border-width controls thickness (e.g., px) */
+.width-demo {
+    border-style: dotted; /* enables a border */
+    border-width: 4px;    /* sets border thickness */
+
+    padding: 10px;
+}
+
+/* --- 4. Border Shorthand --- */
+/* Theory: Sets width, style, and color in one declaration */
+.shorthand-demo {
+    border: 2px solid gray;
+
+    padding: 10px;
+}
+
+/* --- 5. Single Side Borders --- */
+/* Theory: Target specific sides (top, right, bottom, left) */
+
+/* Example 1: Span underline */
+.single-side-span {
+    border-bottom: 2px solid green;
+}
+
+/* Example 2: Corner border */
+.single-side-box {
+    border-bottom: 2px solid red;
+    border-left: 2px solid red;
+
+    padding: 10px;
+    width: fit-content; /* Keeps the box tight to the text */
+}
